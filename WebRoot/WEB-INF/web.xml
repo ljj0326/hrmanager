@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>HRManager</display-name>
+  <welcome-file-list>
+    <welcome-file>admin/login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AdminServiet</display-name>
+    <servlet-name>AdminServiet</servlet-name>
+    <servlet-class>com.black.HRManager.Servlet.AdminServiet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServiet</servlet-name>
+    <url-pattern>/AdminServiet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeptServiet</display-name>
+    <servlet-name>DeptServiet</servlet-name>
+    <servlet-class>com.black.HRManager.Servlet.DeptServiet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeptServiet</servlet-name>
+    <url-pattern>/DeptServiet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TitleServlet</display-name>
+    <servlet-name>TitleServlet</servlet-name>
+    <servlet-class>com.black.HRManager.Servlet.TitleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TitleServlet</servlet-name>
+    <url-pattern>/TitleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StaffServlet</display-name>
+    <servlet-name>StaffServlet</servlet-name>
+    <servlet-class>com.black.HRManager.Servlet.StaffServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StaffServlet</servlet-name>
+    <url-pattern>/StaffServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
